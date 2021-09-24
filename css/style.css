@@ -1,0 +1,92 @@
+/**** mobile styles first ***/
+
+/** global styles - across all screen sizes **/
+body {
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #111;
+}
+
+
+.inner-container {
+    padding: 16px;
+}
+
+
+/** TYPOGRPAHY ***/
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #1e1e1e;
+}
+
+/**** HEADER ******/
+header {
+    /** shorthand **/
+    background: url("https://source.unsplash.com/random") center bottom / cover no-repeat;
+    /* image source, position (x, y), size, repetition */
+    color: #fff;
+
+    /** longhand * 
+    background-image: url("https://source.unsplash.com/random");
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    */
+
+}
+
+nav {
+    display: flex;
+    align-items: center; /** vertical centers content/elements on the y-axix (aka as the cross-axis) **/
+    /* justify-content: space-between; * x-axis * */
+    flex-flow: wrap; /** stages of squishiness **/
+}
+
+.main-nav {
+    display: flex;
+    flex-basis: 90%;
+    align-items: center;
+}
+
+.main-nav li:first-child {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.main-nav li {
+    margin-left: 18px;
+}
+
+nav a {
+    color: #fff;
+    font-weight: bold;
+}
+
+/*** sign in btn ***/
+.main-nav li:last-child a {
+    padding: 8px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-nav li:last-child a:hover {
+    background-color: white;
+    color: #1e1e1e;
+}
+
+
+/** logo **/
+.logo {
+    font-size: 24px;
+    line-height: 0.9;
+    flex-basis: 10%;
+}
+
+.logo span {
+    display: block;
+}
+
+
